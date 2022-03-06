@@ -27,6 +27,15 @@ __See example__ markdown output here:
 
 
 
+## Compile
+```
+qmake -r "CONFIG+=release"
+make
+```
+
+* depending on your system environment you maybe want to modify the MAKEFILE g++ compiler option to
+```g++ -std=c++2a``` || ```-std=gnu++1z```
+
 
 # header of main.cpp
 
