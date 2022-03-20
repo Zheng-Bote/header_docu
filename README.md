@@ -1,12 +1,12 @@
 # header_docu
-create html- or md- based documentation from file header
+create HTML- or Markdown- based documentation from file header
 
 
-With great respect to Doxygen, JSDoc or DOxDox, but they all reading / parsing the complete textfile.
+With great respect to Doxygen, JSDoc or DoxDox, but they all reading / parsing the complete textfile.
 
-**For me I just need parsing the first comment block of a single textfile or every textfile with a definded file-extension in a folder, doesn't matter if *.js, *.h, *.hpp or whatever**
+__For me I just need parsing the first comment block of a single textfile or every textfile with a defined file-extension in a folder, doesn't matter if *.js, *.h, *.hpp or whatever__
 
-This is the first version of the commandline tool, written with QT5 and C++17
+This is the first quick & dirty version of the commandline tool, written with QT5 and C++17
 
 
 __See example__ markdown output here:
@@ -17,13 +17,15 @@ __See example__ markdown output here:
 
 
 ## Roadmap:
-[x] quick and dirty commandline parser
+- [x] quick and dirty commandline parser
 
-[ ] migrate QT commandline to plain cxx
+- [ ] migrate QT commandline to vanilla cxx
 
-[ ] build desktop app with QT
+- [ ] build Linux and Windows desktop app with QT
 
-[ ] CMake / make support for compilation and installation
+- [ ] build Windows desktop app with C#
+
+- [ ] CMake / make support for compilation and installation
 
 
 
@@ -70,7 +72,7 @@ make
 
 >     EXAMPLES:
 >     /usr/local/bin/header_docu --dir . --ext h --out md // read/parse all *.h files in the current directory
->     /usr/local/bin/header_docu --file ~/DEV/CPP/header_docu/main.cpp --out html // read/parse single file and output as HTML5 snippet
+>     /usr/local/bin/header_docu --file ~/DEV/CPP/header_docu/main.cpp --out html // read/parse single file and output as HTML5
 
 ### RETURN:
 >     output.md | output.html
